@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Sales - All Table Attributes</title>
+    <style>
+        /* Modern alternative to deprecated HTML attributes */
+        table {
+            border-collapse: separate;
+            border-spacing: 10px;
+            width: 1000px;
+            height: 600px;
+            margin: 40px auto;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 15px;
+            border: 3px solid #000;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body bgcolor="grey">
+    <table 
+        border="3" 
+        cellpadding="15" 
+        cellspacing="10" 
+        width="1000" 
+        height="600" 
+        align="center" 
+        bgcolor="white"
+        summary="A table displaying fruit names, images and prices."
+    >
+        <caption>Fruit Sales Table</caption>
+        <tr bgcolor="#f2f2f2" align="center" valign="middle">
+            <th scope="col" headers="fruitname">FRUIT NAME</th>
+            <th scope="col" headers="fruitimage">IMAGE</th>
+            <th scope="col" headers="fruitprice">PRICE</th>
+        </tr>
+        <tr>
+            <td id="fruitname1" bgcolor="#ffe4b5" align="center" valign="middle">Pineapple</td>
+            <td id="fruitimage1" bgcolor="#f0fff0" align="center" valign="middle">
+                <img src="Image/download.jpeg" alt="PINEAPPLE" width="200" height="200">
+            </td>
+            <td id="fruitprice1" bgcolor="#f5f5dc" align="center" valign="middle">20cedis</td>
+        </tr>
+        <tr>
+            <td id="fruitname2" bgcolor="#ffe4b5" align="center" valign="middle">Apple</td>
+            <td id="fruitimage2" bgcolor="#f0fff0" align="center" valign="middle">
+                <img src="Image/images (1).jpeg" alt="APPLE" width="200" height="200">
+            </td>
+            <td id="fruitprice2" bgcolor="#f5f5dc" align="center" valign="middle">10cedis</td>
+        </tr>
+        <tr>
+            <td id="fruitname3" bgcolor="#ffe4b5" align="center" valign="middle">Strawberry</td>
+            <td id="fruitimage3" bgcolor="#f0fff0" align="center" valign="middle">
+                <img src="Image/images (2).jpeg" alt="STRAWBERRY" width="200" height="200">
+            </td>
+            <td id="fruitprice3" bgcolor="#f5f5dc" align="center" valign="middle">15cedis</td>
+        </tr>
+        <tr>
+            <td id="fruitname4" bgcolor="#ffe4b5" align="center" valign="middle" rowspan="2">Lime <br> <span style="font-size:0.8em;">(and Lemon)</span></td>
+            <td id="fruitimage4" bgcolor="#f0fff0" align="center" valign="middle">
+                <img src="Image/images.jpeg" alt="LIME" width="200" height="200">
+            </td>
+            <td id="fruitprice4" bgcolor="#f5f5dc" align="center" valign="middle">5cedis</td>
+        </tr>
+        <tr>
+            <!-- Demonstrate colspan and headers -->
+            <td colspan="2" headers="fruitimage4 fruitprice4" bgcolor="#e0ffff" align="center" valign="middle">
+                Special Offer: Buy 1 Lime, get 1 Lemon free!
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
